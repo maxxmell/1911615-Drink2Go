@@ -1,22 +1,24 @@
-let navMain = document.querySelector('.main-header__main-nav');
-let navToggle = document.querySelector('.main-header__toggle');
+let navContainer = document.querySelector('.main-header__site-nav');
+let navToggle = document.querySelector('.menu-toggle');
+let navToggleButton = document.querySelector('.menu-toggle__button');
 
-navMain.classList.remove('main-header__main-nav--no-script');
-navToggle.classList.remove('main-header__toggle--no-script');
+navContainer.classList.remove('main-header__site-nav--no-script');
+navToggle.classList.remove('menu-toggle--no-script');
 
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-header__main-nav--closed')) {
-    navMain.classList.remove('main-header__main-nav--closed');
-    navMain.classList.add('main-header__main-nav--opened');
+navToggleButton.addEventListener('click', function () {
+  if (navContainer.classList.contains('main-header__site-nav--closed')) {
+    navContainer.classList.remove('main-header__site-nav--closed');
+    navContainer.classList.add('main-header__site-nav--opened');
   } else {
-    navMain.classList.add('main-header__main-nav--closed');
-    navMain.classList.remove('main-header__main-nav--opened');
+    navContainer.classList.add('main-header__site-nav--closed');
+    navContainer.classList.remove('main-header__site-nav--opened');
   }
-  if (navToggle.classList.contains('main-header__toggle--closed')) {
-    navToggle.classList.remove('main-header__toggle--closed');
-    navToggle.classList.add('main-header__toggle--opened');
+
+  if (navToggleButton.classList.contains('menu-toggle__button--closed')) {
+    navToggleButton.classList.remove('menu-toggle__button--closed');
+    navToggleButton.classList.add('menu-toggle__button--opened');
   } else {
-    navToggle.classList.add('main-header__toggle--closed');
-    navToggle.classList.remove('main-header__toggle--opened');
+    navToggleButton.classList.add('menu-toggle__button--closed');
+    navToggleButton.classList.remove('menu-toggle__button--opened');
   }
 });

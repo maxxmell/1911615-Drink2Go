@@ -1,0 +1,38 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 60px);
+  justify-content: end;
+}
+
+.user-list__item {
+  box-sizing: border-box;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.user-list__item--toggle-no-script {
+  display: none;
+}
+
+.user-list__link {
+  display: flex;
+  justify-content: center;
+  padding: 22px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.user-list__description {
+  padding-left: 8px;
+  display: none;
+}

@@ -4,22 +4,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="/fonts/montserratRegular.woff2" as="font">
-    <link rel="preload" href="/fonts/montserratBold.woff2" as="font">
-    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="preload" href="fonts/montserratRegular.woff2" as="font">
+    <link rel="preload" href="fonts/montserratBold.woff2" as="font">
+    <title>Drink2Go</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="icon.webmanifest">
-    <title>Drink2Go</title>
     <script defer src="js/burger-menu.js" type="text/javascript"></script>
-    <script defer src="js/lazy-map.js" type="text/javascript"></script>
+    <!-- <script defer src="js/lazy-map.js" type="text/javascript"></script> -->
   </head>
   <body class="page__body">
     <header class="main-header">
-
+      <div class="main-header__logo main-logo">
+        <a class="main-logo__link" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-header-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-header-tablet.svg">
+            <img class="main-logo__img" src="img/logo/logo-header-mobile.svg" width="32" height="36" alt="Интернет-магазин кофейных напитков.">
+          </picture>
+        </a>
+        <p class="main-logo__description">Интернет-магазин кофейных напитков</p>
+      </div>
+      <nav class="main-header__user-nav">
+        <ul class="main-header__user-list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <img class="user-list__icon user-list__icon--search" src="./img/icons/icon-user.svg" width="16" height="16">
+              <span class="user-list__description">Войти</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <img class="user-list__icon user-list__icon--search" src="./img/icons/icon-cart.svg" width="16" height="16">
+              <span class="user-list__description">Корзина</span>
+            </a>
+          </li>
+          <li class="user-list__item menu-toggle menu-toggle--no-script">
+            <button class="menu-toggle__button menu-toggle__button--closed" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <nav class="main-header__site-nav main-header__site-nav--closed main-header__site-nav--no-script">
+        <ul class="main-header__site-list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">
+              Каталог
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="delivery.html">
+              Доставка
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="about.html">
+              О нас
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main-container">
-
+      <p class="test">test</p>
     </main>
     <footer class="main-footer">
 
