@@ -1,0 +1,79 @@
+.features {
+  margin: 0 auto;
+  color: #333333;
+}
+
+.features__type {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7859cf;
+}
+
+.features__header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  position: relative;
+  padding: 66px 20px 0;
+  margin: 0;
+}
+
+.features__item::before {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 52px;
+  height: 56px;
+  background-repeat: no-repeat;
+}
+
+.features__item--speed::before {
+  width: 50px;
+  background-image: url("../img/icons/icon-feature-speed.svg");
+}
+
+.features__item--fit::before {
+  background-image: url("../img/icons/icon-feature-fit.svg");
+}
+
+.features__item--energy::before {
+  width: 42px;
+  background-image: url("../img/icons/icon-feature-energy.svg");
+}
+
+.features__item--eco::before {
+  width: 46px;
+  background-image: url("../img/icons/icon-feature-eco.svg");
+}
+
+.features__tittle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.features__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
