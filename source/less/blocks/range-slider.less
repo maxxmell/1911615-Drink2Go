@@ -1,12 +1,23 @@
-.range {
-  display: flex;
-  align-items: center;
+.range-slider {
   margin: 0 auto;
   width: 280px;
-  height: 24px;
+  min-height: 137px;
+  padding: 0;
+  border: none;
 }
 
-.range-scale {
+.range-slider__title {
+  padding: 0;
+  border: 0;
+}
+
+.range-slider__wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+}
+
+.range-slider__scale {
   position: relative;
   margin: 11px 0;
   height: 2px;
@@ -14,14 +25,14 @@
   width: 100%;
 }
 
-.range-bar {
+.range-slider__bar {
   position: absolute;
   height: 2px;
 
   background-color: #9070ec;
 }
 
-.range-toggle {
+.range-slider__toggle {
   position: absolute;
   top: calc(50% - 24px / 2);
   width: 24px;
@@ -48,9 +59,9 @@
   }
 }
 
-.range-toggle:hover,
-.range-toggle:focus,
-.range-toggle:focus-visible {
+.range-slider__toggle:hover,
+.range-slider__toggle:focus,
+.range-slider__toggle:focus-visible {
   outline: none;
 
   &::after {
@@ -58,7 +69,7 @@
   }
 }
 
-.range-toggle:active {
+.range-slider__toggle:active {
   border: 2px solid #7859cf;
 
   &::after {
@@ -68,11 +79,11 @@
 
 // disabled
 
-.toggle-min {
+.range-slider__toggle--min {
   left: 0;
 }
 
-.toggle-max {
+.range-slider__toggle--max {
   right: 0;
 }
 
