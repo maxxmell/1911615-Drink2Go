@@ -13,8 +13,8 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="icon.webmanifest">
-    <!-- <script src="leaflet/leaflet.js" async></script>
-    <script src="js/main.js" type="module"></script> -->
+    <script src="leaflet/leaflet.js" async></script>
+    <script src="js/main.js" type="module"></script>
     <script defer src="js/burger-menu.js"></script>
     <!-- <script defer src="js/custom-select.js"></script> -->
   </head>
@@ -81,84 +81,95 @@
       </nav>
     </header>
     <main class="main-container">
-      <!-- <section class="best-deal">
+      <section class="best-deal">
         <h2 class="visually-hidden">Лучшие предложения.</h2>
-        <div class="best-deal__container swiper"> -->
-          <!-- Swiper required wrapper -->
-          <!-- <div class="best-deal__wrapper swiper-wrapper">
+        <div class="best-deal__container swiper">
+          <div class="best-deal__wrapper swiper-wrapper">
             <div class="best-deal__slide best-deal__slide--decaf-flat-white swiper-slide">
-              <a href="#" class="best-deal__link-image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/best-deal/best-deal-decaf-flat-white-desktop.webp 1x, img/content/best-deal/best-deal-decaf-flat-white-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/best-deal/best-deal-decaf-flat-white-tablet.webp 1x, img/content/best-deal/best-deal-decaf-flat-white-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/best-deal/best-deal-decaf-flat-white-mobile.webp 1x, img/content/best-deal/best-deal-decaf-flat-white-mobile@2x.webp 2x">
-                  <source media="(min-width: 1440px)" srcset="img/content/best-deal/best-deal-decaf-flat-white-desktop.png 1x, img/content/best-deal/best-deal-decaf-flat-white-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/content/best-deal/best-deal-decaf-flat-white-tablet.png 1x, img/content/best-deal/best-deal-decaf-flat-white-tablet@2x.png 2x">
-                  <img class="best-deal__image" src="img/content/best-deal/best-deal-decaf-flat-white-mobile.png" srcset="img/content/best-deal/best-deal-decaf-flat-white-mobile.png 1x, img/content/best-deal/best-deal-decaf-flat-white-mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт">
-                </picture>
-              </a>
-              <div class="best-deal__product-info best-deal-product" >
-                <p class="best-deal-product__status">Новинка!</p>
-                <a href="#" class="best-deal-product__title-link">
-                  <h3 class="best-deal-product__title">Декаф Флэт Уайт</h3>
+              <div class="best-deal__slide__container">
+                <a href="#" class="best-deal__link-image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/best-deal/best-deal-decaf-flat-white-desktop.webp 1x, img/content/best-deal/best-deal-decaf-flat-white-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/content/best-deal/best-deal-decaf-flat-white-tablet.webp 1x, img/content/best-deal/best-deal-decaf-flat-white-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/best-deal/best-deal-decaf-flat-white-mobile.webp 1x, img/content/best-deal/best-deal-decaf-flat-white-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/content/best-deal/best-deal-decaf-flat-white-desktop.png 1x, img/content/best-deal/best-deal-decaf-flat-white-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/content/best-deal/best-deal-decaf-flat-white-tablet.png 1x, img/content/best-deal/best-deal-decaf-flat-white-tablet@2x.png 2x">
+                    <img class="best-deal__image" src="img/content/best-deal/best-deal-decaf-flat-white-mobile.png" srcset="img/content/best-deal/best-deal-decaf-flat-white-mobile.png 1x, img/content/best-deal/best-deal-decaf-flat-white-mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт">
+                  </picture>
                 </a>
-                <p class="best-deal-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-                <p class="best-deal-product__old-price">295₽</p>
-                <p class="best-deal-product__new-price">225₽</p>
-                <button class="best-deal-product__order-button" type="button">Заказать</button>
+                <div class="best-deal__product-info best-deal-product" >
+                  <p class="best-deal-product__status">Новинка!</p>
+                  <a href="#" class="best-deal-product__title-link">
+                    <h3 class="best-deal-product__title">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="best-deal-product__description">Свежесваренный кофе без кофеина из Эфиопии <br class="tablet-break">с натуральным фермерским молоком — то, что нужно <br class="tablet-break">для расслабления после тяжёлого рабочего дня</p>
+                  <div class="best-deal-product__billing-wrapper">
+                    <p class="best-deal-product__old-price">295₽</p>
+                    <p class="best-deal-product__new-price">225₽</p>
+                    <button class="best-deal-product__order-button button" type="button">Заказать</button>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="best-deal__slide best-deal__slide--lavender-latte swiper-slide">
-              <a href="#" class="best-deal__link-image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/best-deal/best-deal-lavender-latte-desktop.webp 1x, img/content/best-deal/best-deal-lavender-latte-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/best-deal/best-deal-lavender-latte-tablet.webp 1x, img/content/best-deal/best-deal-lavender-latte-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/best-deal/best-deal-lavender-latte-mobile.webp 1x, img/content/best-deal/best-deal-lavender-latte-mobile@2x.webp 2x">
-                  <source media="(min-width: 1440px)" srcset="img/content/best-deal/best-deal-lavender-latte-desktop.png 1x, img/content/best-deal/best-deal-lavender-latte-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/content/best-deal/best-deal-lavender-latte-tablet.png 1x, img/content/best-deal/best-deal-lavender-latte-tablet@2x.png 2x">
-                  <img class="best-deal__image" src="img/content/best-deal/best-deal-lavender-latte-mobile.png" srcset="img/content/best-deal/best-deal-lavender-latte-mobile.png 1x, img/content/best-deal/best-deal-lavender-latte-mobile@2x.png 2x" width="280" height="280" alt="Лавандовый Латте">
-                </picture>
-              </a>
-              <div class="best-deal__product-info best-deal-product" >
-                <p class="best-deal-product__status">Новинка!</p>
-                <a href="#" class="best-deal-product__title-link">
-                  <h3 class="best-deal-product__title">Лавандовый Латте</h3>
+              <div class="best-deal__slide__container">
+                <a href="#" class="best-deal__link-image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/best-deal/best-deal-lavender-latte-desktop.webp 1x, img/content/best-deal/best-deal-lavender-latte-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/content/best-deal/best-deal-lavender-latte-tablet.webp 1x, img/content/best-deal/best-deal-lavender-latte-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/best-deal/best-deal-lavender-latte-mobile.webp 1x, img/content/best-deal/best-deal-lavender-latte-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/content/best-deal/best-deal-lavender-latte-desktop.png 1x, img/content/best-deal/best-deal-lavender-latte-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/content/best-deal/best-deal-lavender-latte-tablet.png 1x, img/content/best-deal/best-deal-lavender-latte-tablet@2x.png 2x">
+                    <img class="best-deal__image" src="img/content/best-deal/best-deal-lavender-latte-mobile.png" srcset="img/content/best-deal/best-deal-lavender-latte-mobile.png 1x, img/content/best-deal/best-deal-lavender-latte-mobile@2x.png 2x" width="280" height="280" alt="Лавандовый Латте">
+                  </picture>
                 </a>
-                <p class="best-deal-product__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-                <p class="best-deal-product__old-price">285₽</p>
-                <p class="best-deal-product__new-price">265₽</p>
-                <button class="best-deal-product__order-button" type="button">Заказать</button>
+                <div class="best-deal__product-info best-deal-product" >
+                  <p class="best-deal-product__status">Новинка!</p>
+                  <a href="#" class="best-deal-product__title-link">
+                    <h3 class="best-deal-product__title">Лавандовый Латте</h3>
+                  </a>
+                  <p class="best-deal-product__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                  <div class="best-deal-product__billing-wrapper">
+                    <p class="best-deal-product__old-price">285₽</p>
+                    <p class="best-deal-product__new-price">265₽</p>
+                    <button class="best-deal-product__order-button button" type="button">Заказать</button>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="best-deal__slide best-deal__slide--triple-espresso swiper-slide">
-              <a href="#" class="best-deal__link-image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/best-deal/best-deal-triple-espresso-desktop.webp 1x, img/content/best-deal/best-deal-triple-espresso-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/best-deal/best-deal-triple-espresso-tablet.webp 1x, img/content/best-deal/best-deal-triple-espresso-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/content/best-deal/best-deal-triple-espresso-mobile.webp 1x, img/content/best-deal/best-deal-triple-espresso-mobile@2x.webp 2x">
-                  <source media="(min-width: 1440px)" srcset="img/content/best-deal/best-deal-triple-espresso-desktop.png 1x, img/content/best-deal/best-deal-triple-espresso-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/content/best-deal/best-deal-triple-espresso-tablet.png 1x, img/content/best-deal/best-deal-triple-espresso-tablet@2x.png 2x">
-                  <img class="best-deal__image" src="img/content/best-deal/best-deal-triple-espresso-mobile.png" srcset="img/content/best-deal/best-deal-triple-espresso-mobile.png 1x, img/content/best-deal/best-deal-triple-espresso-mobile@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо">
-                </picture>
-              </a>
-              <div class="best-deal__product-info best-deal-product" >
-                <p class="best-deal-product__status">Новинка!</p>
-                <a href="#" class="best-deal-product__title-link">
-                  <h3 class="best-deal-product__title">Тройной Эспрессо</h3>
+              <div class="best-deal__slide__container">
+                <a href="#" class="best-deal__link-image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/best-deal/best-deal-triple-espresso-desktop.webp 1x, img/content/best-deal/best-deal-triple-espresso-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/content/best-deal/best-deal-triple-espresso-tablet.webp 1x, img/content/best-deal/best-deal-triple-espresso-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/best-deal/best-deal-triple-espresso-mobile.webp 1x, img/content/best-deal/best-deal-triple-espresso-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/content/best-deal/best-deal-triple-espresso-desktop.png 1x, img/content/best-deal/best-deal-triple-espresso-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/content/best-deal/best-deal-triple-espresso-tablet.png 1x, img/content/best-deal/best-deal-triple-espresso-tablet@2x.png 2x">
+                    <img class="best-deal__image" src="img/content/best-deal/best-deal-triple-espresso-mobile.png" srcset="img/content/best-deal/best-deal-triple-espresso-mobile.png 1x, img/content/best-deal/best-deal-triple-espresso-mobile@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо">
+                  </picture>
                 </a>
-                <p class="best-deal-product__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-                <p class="best-deal-product__old-price">395₽</p>
-                <p class="best-deal-product__new-price">375₽</p>
-                <button class="best-deal-product__order-button" type="button">Заказать</button>
+                <div class="best-deal__product-info best-deal-product" >
+                  <p class="best-deal-product__status">Новинка!</p>
+                  <a href="#" class="best-deal-product__title-link">
+                    <h3 class="best-deal-product__title">Тройной Эспрессо</h3>
+                  </a>
+                  <p class="best-deal-product__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                  <div class="best-deal-product__billing-wrapper">
+                    <p class="best-deal-product__old-price">395₽</p>
+                    <p class="best-deal-product__new-price">375₽</p>
+                    <button class="best-deal-product__order-button button" type="button">Заказать</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="best-deal__pagination swiper-pagination"></div>
-          <div class="best-deal__button-prev swiper-button-prev"></div>
-          <div class="best-deal__button-next swiper-button-next"></div>
+          <button class="best-deal__button best-deal__button--prev swiper-button-prev"></button>
+          <button class="best-deal__button best-deal__button--next swiper-button-next"></button>
         </div>
-      </section> -->
-      <!-- <section class="features">
+      </section>
+      <section class="features">
         <p class="features__badge">Преимущества</p>
         <h2 class="features__header">Главные причины выбрать Drink2Go</h2>
         <ul class="features__list">
@@ -168,7 +179,7 @@
           </li>
           <li class="features__item features__item--fit">
             <h3 class="features__tittle">Удобство</h3>
-            <p class="features__description">Легко помещается и в карман, и в маленькую сумочку</p>
+            <p class="features__description">Легко помещается и в карман, <br>и в маленькую сумочку</p>
           </li>
           <li class="features__item features__item--energy">
             <h3 class="features__tittle">Бодрость</h3>
@@ -176,10 +187,10 @@
           </li>
           <li class="features__item features__item--eco">
             <h3 class="features__tittle">Экологичность</h3>
-            <p class="features__description">Вся упаковка сделана из перерабатываемых материалов</p>
+            <p class="features__description">Вся упаковка сделана <br>из перерабатываемых материалов</p>
           </li>
         </ul>
-      </section> -->
+      </section>
       <!-- <section class="catalog">
         <p class="catalog__badge">Каталог</p>
         <h2 class="catalog__header">Каталог кофейных напитков</h2>
