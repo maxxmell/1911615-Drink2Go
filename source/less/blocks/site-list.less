@@ -15,7 +15,6 @@
 .site-list__link {
   box-sizing: border-box;
   width: 100%;
-  display: inline-block;
   text-align: center;
   padding: 20px;
   text-decoration: none;
@@ -43,9 +42,41 @@
 }
 
 @media (min-width: @tablet-width) {
+  .site-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, max-content));
+    justify-content: center;
+    align-items: center;
+  }
 
+  .site-list__item {
+    min-height: 80px;
+  }
+
+  .site-list__link {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-list__link--current {
+    padding-bottom: 18px;
+    border-bottom: solid 2px #7859cf;
+    color: #7859cf;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .site-list {
+    column-gap: 20px;
+  }
+}
 
+.site-list__link:hover,
+.site-list__link:focus {
+  color: #7859cf;
+}
+
+.site-list__link:active {
+  color: #7859cf;
+  background-color: #f0ebff;
 }

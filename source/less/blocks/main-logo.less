@@ -2,6 +2,7 @@
 .main-logo__link {
   display: inline-block;
   margin: 0 auto;
+  padding: 12px 20px;
 }
 
 .main-logo__img {
@@ -16,13 +17,35 @@
 
 
 @media (min-width: @tablet-width) {
+  .main-logo__link {
+    padding: 22px 0;
+  }
+
   .main-logo__img {
     width: 82px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .main-logo {
+    display: flex;
+  }
+
   .main-logo__img {
     width: 170px;
   }
+
+  .main-logo__tittle {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.main-logo__link:active {
+  background-color: #f0ebff;
 }
