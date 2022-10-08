@@ -16,7 +16,7 @@
     <script src="leaflet/leaflet.js" async></script>
     <script src="js/main.js" type="module"></script>
     <script defer src="js/burger-menu.js"></script>
-    <!-- <script defer src="js/custom-select.js"></script> -->
+    <script defer src="js/custom-select.js"></script>
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -191,7 +191,7 @@
           </li>
         </ul>
       </section>
-      <!-- <section class="catalog">
+      <section class="catalog">
         <p class="catalog__badge">Каталог</p>
         <h2 class="catalog__header">Каталог кофейных напитков</h2>
         <section class="catalog__filter">
@@ -200,9 +200,9 @@
             <fieldset class="filter-form__range-group range-slider">
               <legend class="range-slider__title">Цена</legend>
                 <div class="range-slider__wrapper">
-                  <div class="range-slider__scale"> -->
+                  <div class="range-slider__scale">
                     <!-- Стили элемента range-bar регулируют положение ползунков через js -->
-                    <!-- <div class="range-slider__bar" style="left: 0;
+                    <div class="range-slider__bar" style="left: 0;
                     right: 20px;">
                       <button type="button" class="range-slider__toggle range-slider__toggle--min">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -214,8 +214,8 @@
                   </div>
                 </div>
                 <div class="range-slider__input-wrapper">
-                  <input type="number" max="999999" placeholder="0" class="range-slider__price range-slider__price--min">
-                  <input type="number" max="999999" value="900" class="range-slider__price range-slider__price--max">
+                  <input type="number" name="min-price" max="999999" placeholder="0" class="range-slider__price range-slider__price--min">
+                  <input type="number" name="max-price" max="999999" value="900" class="range-slider__price range-slider__price--max">
                 </div>
             </fieldset>
             <fieldset class="filter-form__milk-group radio-button-group">
@@ -243,7 +243,7 @@
                   </label>
                 </li>
                 <li class="radio-button-group__item">
-                  <label class="radio-button-group__element radio-button-control">
+                  <label class="radio-button-group__element radio-button-control radio-button-control--disabled">
                     <input class="radio-button-control__input visually-hidden" type="radio" name="milk" value="no-milk" disabled>
                     <span class="radio-button-control__mark"></span>
                     <span class="radio-button-control__label">Без молока</span>
@@ -251,7 +251,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-form__contry-group checkbox-group">
+            <fieldset class="filter-form__country-group checkbox-group">
               <legend class="checkbox-group__title">Страна произрастания</legend>
               <ul class="checkbox-group__list">
                 <li class="checkbox-group__item">
@@ -283,7 +283,7 @@
                   </label>
                 </li>
                 <li class="checkbox-group__item">
-                  <label class="checkbox-group__element checkbox-control">
+                  <label class="checkbox-group__element checkbox-control checkbox-control--disabled">
                     <input class="checkbox-control__input visually-hidden" type="checkbox" value="Peru" name="origin-country" disabled>
                     <span class="checkbox-control__mark"></span>
                     <span class="checkbox-control__label">Перу</span>
@@ -291,8 +291,8 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="filter-form__button filter-form__button--filter" type="submit">Применить фильтр</button>
-            <button class="filter-form__button filter-form__button--reset" type="reset">Сбросить фильтр</button>
+            <button class="filter-form__button filter-form__button--filter button" type="submit">Применить фильтр</button>
+            <button class="filter-form__button filter-form__button--reset button button--secondary" type="reset">Сбросить фильтр</button>
           </form>
         </section>
         <section class="main-catalog">
@@ -324,15 +324,15 @@
                 </a>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="product-card__billing-wrapper">
-                  <p class="product-card__price">225₽</p> -->
+                  <p class="product-card__price">225₽</p>
                   <!-- При добавлении JS необходимо указать href вида"cart/?add-to-cart=item-id&quantity=1" c указанием адреса страницы добавления товара в корзину. На самом js через prevent default задать ссылке возможность добавления товара как по кнопке. -->
-                  <!-- <a class="product-card__cart-link button button--cart" href="#">
+                  <a class="product-card__cart-link button button--cart" href="#">
                     В корзину
                   </a>
                 </div>
               </div>
-            </li> -->
-            <!-- <li class="main-catalog__item product-card">
+            </li>
+            <li class="main-catalog__item product-card">
               <a href="#" class="product-card__image-link">
                 <picture>
                   <source type="image/webp" srcset="img/content/catalog/catalog-coffee-can-2.webp 1x, img/content/catalog/catalog-coffee-can-2@2x.webp 2x">
@@ -432,6 +432,7 @@
                 </div>
               </div>
             </li>
+            <!-- Дополнительные карточки товаров
             <li class="main-catalog__item product-card">
               <a href="#" class="product-card__image-link">
                 <picture>
@@ -491,14 +492,14 @@
                   </a>
                 </div>
               </div>
-            </li>
+            </li> -->
           </ul>
         </section>
-      </section> -->
+      </section>
       <!-- <section class="map">
           <h2 class="visually-hidden">Наш адрес.</h2>
           <div class="map__canvas" id="map-canvas"></div>
-      </section> -->
+      </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">

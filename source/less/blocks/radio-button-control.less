@@ -33,9 +33,9 @@
   display: flex;
   align-items: center;
   min-height: 24px;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -52,3 +52,27 @@
   border-radius: 50%;
 }
 
+.radio-button-control__input:checked:disabled + .radio-button-control__mark::before {
+  background-color: #e2e2e2;
+}
+
+.radio-button-control__input:checked:disabled + .radio-button-control__mark {
+  outline: none;
+  border: 2px solid #e2e2e2;
+}
+
+.radio-button-control__input:checked + .radio-button-control__mark {
+  outline: none;
+  border: 2px solid #9070ec;
+}
+
+.radio-button-control--disabled .radio-button-control__label {
+  color: #bdbdbd;
+}
+
+.radio-button-control--disabled:hover .radio-button-control__mark,
+.radio-button-control--disabled:focus .radio-button-control__mark,
+.radio-button-control--disabled:focus-within .radio-button-control__mark,
+.radio-button-control--disabled .radio-button-control__mark {
+  border: 2px solid #e2e2e2;
+}
