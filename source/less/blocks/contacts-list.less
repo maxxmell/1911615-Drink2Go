@@ -1,6 +1,6 @@
 .contacts-list {
   margin: 0;
-  padding: 0 20px 20px;
+  padding: 6px 20px 4px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -43,4 +43,26 @@
   margin: 0;
   text-decoration: none;
   color: #333333;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-list__item--address {
+    padding-top: 1px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-list__item--address {
+    padding-top: 3px;
+  }
+}
+
+.contacts-list__link:hover,
+.contacts-list__link:focus {
+  outline: none;
+  color: #9070ec;
+}
+
+.contacts-list__link:active {
+  color: #593cac;
 }
