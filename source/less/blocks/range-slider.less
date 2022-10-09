@@ -147,7 +147,7 @@
   display: none;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) and (max-width: @tablet-width-max) {
   .range-slider {
     padding: 0;
     width: 227px;
@@ -175,6 +175,33 @@
 
   .range-slider__price {
     width: 92.7px;
+    height: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-slider {
+    padding: 0;
+    width: 318px;
+    min-height: 130px;
+    border: none;
+  }
+
+  .range-slider__title {
+    padding-top: 4px;
+    padding-bottom: 18px;
+  }
+
+  .range-slider__wrapper {
+    padding-bottom: 21px;
+  }
+
+  .range-slider__input-wrapper {
+    width: 318px;
+  }
+
+  .range-slider__price {
+    width: 134px;
     height: 40px;
   }
 }

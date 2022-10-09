@@ -3,6 +3,7 @@
   margin: 0;
   padding-top: 50px;
   background-color: #f8f8f8;
+  padding-bottom: 2px;
 }
 
 .catalog__badge {
@@ -38,6 +39,7 @@
 @media (min-width: @tablet-width) {
   .catalog {
     padding-top: 81px;
+    padding-bottom: 0;
   }
 
   .catalog__header {
@@ -51,5 +53,46 @@
   .catalog__filter {
     width: @tablet-width;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    margin: 0 auto;
+    padding-top: 98px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 318px  1012px;
+    column-gap: 30px;
+    grid-template-areas:
+      "catalog__badge catalog__badge"
+      "catalog__header catalog__header"
+      "catalog__filter main-catalog";
+  }
+
+  .catalog__badge {
+    margin: 0 auto;
+    padding: 0 0 5px;
+    grid-area: catalog__badge;
+    width: 1360px;
+  }
+
+  .catalog__header {
+    margin: 0 auto;
+    padding: 0 0 36px;
+    grid-area: catalog__header;
+    width: 1360px;
+  }
+
+  .catalog__filter {
+    margin: 0 auto;
+    grid-area: catalog__filter;
+    width: 318px;
+  }
+
+  .main-catalog {
+    grid-area: main-catalog;
+    width: 1011px;
+    margin-right: 1px;
   }
 }
