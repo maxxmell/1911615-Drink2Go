@@ -1,7 +1,111 @@
 .product-card {
   box-sizing: border-box;
-  width: 317px;
-  min-height: 460px;
+  width: 280px;
+  min-height: 420px;
   background-color: #ffffff;
+  border-radius: 4px;
   padding: 40px 20px 20px;
+  justify-content: center;
+}
+
+.product-card__image-link {
+  width: 130px;
+  height: 188px;
+}
+
+.product-card__image {
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+}
+
+.product-card__title-link {
+  color: #333333;
+  text-decoration: none;
+}
+
+.product-card__title {
+  margin: 0;
+  padding-top: 23px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.product-card__description {
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.product-card__billing-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 257px;
+  min-height: 36px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 99px 141px;
+}
+
+.product-card__price {
+  margin: 0;
+  margin-right: auto;
+  margin-left: -2px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.product-card__cart-link {
+  box-sizing: border-box;
+  width: 141px;
+  min-height: 36px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .product-card {
+    width: 349px;
+    min-height: 440px;
+    padding: 50px 30px 20px 29px;
+    justify-content: center;
+  }
+
+  .product-card__title {
+    margin: 0;
+    margin-left: 1px;
+    padding-top: 30px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .product-card__description {
+    margin: 0;
+    margin-left: 1px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .product-card__billing-wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 291px;
+    min-height: 36px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 148px 141px;
+  }
+
+  .product-card__price {
+    margin-left: -1px;
+  }
 }

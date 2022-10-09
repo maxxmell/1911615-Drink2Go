@@ -32,3 +32,35 @@
   line-height: 24px;
   margin-bottom: 23.5px;
 }
+
+@media (min-width: @tablet-width) {
+  .filter-form {
+    position: relative;
+    width: 728px;
+    margin: 0 auto 41px;
+    padding-bottom: 46px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(197px, max-content));
+  }
+
+  .filter-form__button--filter {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 179px;
+    margin: auto;
+    min-width: 148px;
+    min-height: 24px;
+    font-size: 14px;
+  }
+
+  .filter-form__button--reset {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 234px;
+    margin: auto;
+    min-width: 127px;
+    min-height: 24px;
+  }
+}

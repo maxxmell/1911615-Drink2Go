@@ -1,0 +1,122 @@
+.catalog__pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.catalog__pagination__list {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 40px 0;
+  width: 280px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
+  column-gap: 20px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .catalog__pagination__description {
+    .visually-hidden;
+  }
+
+  .catalog__pagination__button--prev,
+  .catalog__pagination__button--next {
+    width: 40px;
+    margin-top: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icons/icon-pagination-tick.svg");
+  }
+
+  .catalog__pagination__button--prev {
+    rotate: 180deg;
+  }
+}
+
+.catalog__pagination__item {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.catalog__pagination__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  height: 40px;
+  min-width: 40px;
+  padding: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #7859cf;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.catalog__pagination__button--current {
+  font-weight: 600;
+  color: #333333;
+  background-color: #f8f8f8;
+}
+
+.catalog__pagination__button:hover,
+.catalog__pagination__button:focus {
+  outline: none;
+  background-color: #9070ec;
+  color: #ffffff;
+}
+
+.catalog__pagination__button:active {
+  outline: none;
+  background-color: #593cac;
+  color: #ffffff;
+}
+
+.catalog__pagination__button--disabled {
+  outline: none;
+  background-color: #e2e2e2;
+  color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__pagination {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .catalog__pagination__list {
+    padding: 0;
+    margin: 0;
+    margin-top: 71px;
+    margin-bottom: 90px;
+    min-width: 160px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
+    column-gap: 20px;
+  }
+
+  .catalog__pagination__button--prev,
+  .catalog__pagination__button--next {
+    min-width: 150px;
+    margin-top: 70px;
+    margin-bottom: 90px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .catalog__pagination__button--next {
+    margin-right: -3px;
+    margin-left: -3px;
+  }
+
+  .catalog__pagination__button--prev {
+    margin-right: -9px;
+  }
+}

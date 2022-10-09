@@ -18,6 +18,22 @@
   background-color: #ffffff;
 }
 
+.button--cart {
+  position: relative;
+  padding: 8px 20px 8px 46px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    top: 10px;
+    left: 20px;
+    z-index: 1;
+    background-image: url("../img/icons/icon-add-to-cart.svg");
+  }
+}
+
 .button:hover,
 .button:focus {
   background-color: #9070ec;
