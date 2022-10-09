@@ -1,24 +1,28 @@
-let navContainer = document.querySelector('.main-header__site-nav');
-let navToggle = document.querySelector('.menu-toggle');
-let navToggleButton = document.querySelector('.menu-toggle__button');
+function renderBurgerMenu(options) {
+  let navContainer = document.querySelector(`.${options.navigation}`);
+  let navToggle = document.querySelector(`.${options.container}`);
+  let navToggleButton = document.querySelector(`.${options.container}__button`);
 
-navContainer.classList.remove('main-header__site-nav--no-script');
-navToggle.classList.remove('menu-toggle--no-script');
+  navContainer.classList.remove(`${options.navigation}--no-script`);
+  navToggle.classList.remove(`${options.container}--no-script`);
 
-navToggleButton.addEventListener('click', function () {
-  if (navContainer.classList.contains('main-header__site-nav--closed')) {
-    navContainer.classList.remove('main-header__site-nav--closed');
-    navContainer.classList.add('main-header__site-nav--opened');
-  } else {
-    navContainer.classList.add('main-header__site-nav--closed');
-    navContainer.classList.remove('main-header__site-nav--opened');
-  }
+  navToggleButton.addEventListener('click', function () {
+    if (navContainer.classList.contains(`${options.navigation}--closed`)) {
+      navContainer.classList.remove(`${options.navigation}--closed`);
+      navContainer.classList.add(`${options.navigation}--opened`);
+    } else {
+      navContainer.classList.add(`${options.navigation}--closed`);
+      navContainer.classList.remove(`${options.navigation}--opened`);
+    }
 
-  if (navToggleButton.classList.contains('menu-toggle__button--closed')) {
-    navToggleButton.classList.remove('menu-toggle__button--closed');
-    navToggleButton.classList.add('menu-toggle__button--opened');
-  } else {
-    navToggleButton.classList.add('menu-toggle__button--closed');
-    navToggleButton.classList.remove('menu-toggle__button--opened');
-  }
-});
+    if (navToggleButton.classList.contains(`${options.container}__button--closed`)) {
+      navToggleButton.classList.remove(`${options.container}__button--closed`);
+      navToggleButton.classList.add(`${options.container}__button--opened`);
+    } else {
+      navToggleButton.classList.add(`${options.container}__button--closed`);
+      navToggleButton.classList.remove(`${options.container}__button--opened`);
+    }
+  });
+}
+
+export default renderBurgerMenu;
